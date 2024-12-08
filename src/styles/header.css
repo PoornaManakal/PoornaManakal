@@ -1,0 +1,87 @@
+.myheader {
+    background: linear-gradient(90deg, #4CAF50, #008CBA);
+    color: white;
+
+    padding: 40px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.header-content h1 {
+    margin: 0;
+    font-size: 3rem;
+    font-weight: bold;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.header-content p {
+    margin: 10px 0 0;
+    font-size: 1.4rem;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Decorative floating shapes */
+.header::before, .header::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    animation: float 5s infinite ease-in-out;
+}
+
+.header::before {
+    width: 100px;
+    height: 100px;
+    top: 20%;
+    left: -10%;
+}
+
+.header::after {
+    width: 150px;
+    height: 150px;
+    bottom: 10%;
+    right: -15%;
+}
+
+.logout{
+       background-color: #a72828;
+       margin-left: 90%;
+        color: white;
+        padding: 12px 25px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 18px;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    .nav-link:hover {
+        background-color: #218838;
+        transform: scale(1.05);
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    
+    
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(15px);
+    }
+}

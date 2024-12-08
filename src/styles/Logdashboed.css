@@ -1,0 +1,40 @@
+/* LogDisplay.css */
+
+.log-display-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.ticket-availability-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.ticket-header {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.ticket-availability {
+    background-color: #e7f7e7;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.ticket-available {
+    font-size: 1.25rem;
+    color: #28a745;
+    font-weight: bold;
+}
+
+.loading-message {
+    color: #888;
+    font-size: 1rem;
+}

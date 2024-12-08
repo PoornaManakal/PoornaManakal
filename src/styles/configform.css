@@ -1,0 +1,141 @@
+/* configform.css */
+
+/* Overall layout */
+.config-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 50px;
+    background: linear-gradient(145deg, #0f2027, #203a43);
+    height: 100vh;
+    transition: all 0.3s ease;
+  }
+  
+  .log-display-container {
+    flex: 1;
+    margin-right: 40px;
+    background-color: #16232e;
+    border-radius: 20px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    color: #fff;
+    transition: all 0.3s ease;
+  }
+  
+  .form-container {
+    flex: 2;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 25px;
+    padding: 40px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+  }
+  
+  /* Header */
+  .form-header {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Avenir', sans-serif;
+  }
+  
+  /* Form fields */
+  .form-group {
+    margin-bottom: 30px;
+  }
+  
+  .form-label {
+    font-size: 1.2rem;
+    color: #f0f0f0;
+    margin-bottom: 12px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .form-input {
+    width: 100%;
+    padding: 15px 25px;
+    font-size: 1.2rem;
+    color: #333;
+    border-radius: 12px;
+    border: none;
+    background: #fff;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .form-input:focus {
+    outline: none;
+    box-shadow: 0px 0px 8px 3px rgba(63, 81, 181, 0.7);
+    background: #f8f8f8;
+  }
+  
+  /* Buttons */
+  .form-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+  }
+  
+  .btn-start, .btn-stop {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 15px;
+    cursor: pointer;
+    width: 48%;
+    border: none;
+    transition: all 0.3s ease;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .btn-start {
+    background: #28a745;
+  }
+  
+  .btn-start:hover {
+    background: #218838;
+  }
+  
+  .btn-stop {
+    background: #dc3545;
+  }
+  
+  .btn-stop:hover {
+    background: #c82333;
+  }
+  
+  /* View Logs link */
+  .view-logs-link {
+    color: #ff9900;
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .view-logs-link:hover {
+    text-decoration: underline;
+    color: #ff6700;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .config-container {
+      flex-direction: column;
+      padding: 20px;
+    }
+  
+    .log-display-container {
+      margin-bottom: 30px;
+    }
+  }
+  

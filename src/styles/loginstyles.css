@@ -1,0 +1,127 @@
+/* Container for the login form */
+.login-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 150px auto;
+  padding: 30px;
+  background-color: #fff;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.551);
+  border-radius: 8px;
+  opacity: 0;
+  animation: fadeIn 0.6s forwards;
+}
+
+/* Header styling for the Login form */
+.login-container h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+  animation: slideIn 0.6s ease-out;
+}
+
+/* Form field styles */
+.login-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-container form div {
+  margin-bottom: 15px;
+}
+
+.login-container label {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.login-container input,
+.login-container select {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Focus effect for input fields */
+.login-container input:focus,
+.login-container select:focus {
+  border: 1px solid #007bff;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.3);
+}
+
+/* Submit button styling */
+.login-container button {
+  padding: 12px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.login-container button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Message text */
+.login-container p {
+  text-align: center;
+  color: red;
+  font-size: 1rem;
+  animation: fadeIn 0.6s ease-out;
+}
+
+/* Signup link section at the bottom */
+.signup-prompt {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #333;
+  animation: fadeIn 0.6s ease-out;
+}
+
+.signup-prompt a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+#selectop{
+  width: 220px;
+  margin-left: 36px;
+}
+
+.signup-prompt a:hover {
+  color: #0056b3;
+}
+
+/* Simple animation effects */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
