@@ -1,4 +1,4 @@
-<h1 align="center">Hi 👋, I'm Poorna Manakal</h1>
+<h1 align="center">Hi ! 👋, I'm Poorna Manakal</h1>
 
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=poornamanakal" alt="dinethdilhara" /></a> </p>
 
